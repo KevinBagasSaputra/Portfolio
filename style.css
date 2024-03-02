@@ -1,0 +1,237 @@
+*,
+html{
+    margin: 0;
+    padding:0;
+    background-color: #333333;
+}
+
+.navbar .fix{
+    margin-top: -60px;
+    position: fixed;
+    z-index: 1;
+}
+
+/*                                 ~START NAVIGASI BAR~                         */
+
+.navbar ul li{  /*untuk header ul*/
+    display: inline-block;  /*mengatur menjadi ( satu baris penuh )*/
+    margin-top: 15px;   /*agar kebawah, menyesuaikan ( background-color -nya)*/
+    /*original, margin = 25px*/
+    
+    background-color: rgb(0, 0, 0); /*background color = hitam*/
+
+    
+}
+
+
+.navbar ul li a{
+    text-decoration: none;  /*underline pada link di-tiadakan*/
+    list-style-type: none; /*titik pada list di-tiadakan*/
+    color: rgb(255, 255, 255); /*warna teks navbar = putih*/
+
+    margin-right: 70px; /*agar teks yang awalnya berdempetan menjadi lebar, tanpa menambah halaman lagi!*/
+    font-size: 20px;    /*ukuran font pada navbar = 20px*/
+    font-family: Arial; /* jenis font yang digunakan pada navbar = arial*/
+    border-radius: 2px;   /*dari border, ke radius (siku-nya runcing)*/
+    padding: 5px;   /*membuat lebar isi kolom teks*/
+
+    transition: all 500ms ease;
+
+
+    background-color: rgb(0, 0, 0); /*background color = hitam*/
+
+
+
+}
+
+.navbar .judul{
+    margin-left: 200px;  /*menambahkan margin di kiri, kemudian teks akan tergeser ke-kanan agar dapat di sesuaikan*/  
+    margin-right: 600px;  /*dari portofolio | kevin. Menambah margin di kanan, otomatis link yang lain akan tergeser ke kanan*/
+
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700; /*membuat teks menjadi ( cetak tebal )*/
+    color: white;
+    
+}
+
+.navbar ul{
+    height: 50px;   /*tinggi backgroun adalah 40px dan lebar-nya otomatis*/
+    width: 100%;    /*lebar dari background = 100%*/
+    padding: 20px;    /* membuat lebar navbar */
+
+
+    background-color: rgb(0, 0, 0); /*background color = hitam*/
+
+}
+
+
+/*                                  ~END NAVIGASI BAR~                          */
+
+
+
+
+/*                                  ~START TRANSITION NAVBAR~                          */
+.navbar ul li a:hover{      /*jika di arahkan mouse/kursor-nya pada link, maka akan aktif */
+    color: rgba(255, 255, 255, 0.61);
+
+    text-decoration: underline rgba(255, 255, 255, 0.61);
+}
+/*                                  ~END TRANSITION NAVBAR~                          */
+
+
+
+
+/*                                ~START hero~                                 ~*/
+
+.hero {
+    margin-top: 50px;   /*membuat elemen menjadi ke tengah*/
+    margin-left: 200px; /*menambakan margin di kiri, maka memindahkan elemen dari kiri ke kanan */
+}
+
+
+.background-side-profil{
+    background-color: rgba(29, 30, 30, 0.234);
+}
+
+
+.background-profil{
+    /* background-color: rgba(255, 255, 255, 0.61); */
+    background-image: url(Resource/Background-profil.jpg);
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 910px;
+}
+
+/*                      ~IMG ~                  */
+.hero .profil-gambar{
+    display: flex; /*agar mau di-pindahkan, atau di-atur posisi-nya*/
+    clip-path: circle(47.9% at 50% 50%);    /*properti CSS3*/
+    background-color: rgba(0, 174, 255, 0.846); /*warna background = biru-langit*/
+    width: 460px;   /*lebar dari gambar = 460px*/
+    margin-top: 90px;   /*memindahkan elemen ke tengah karena "margin-top"*/
+}
+
+
+.hero .Profil{
+    margin-left: 500px; /*menambakan margin di kanan, maka elemen sebelum-nya(di-kanan) maka akan bergerak ke kiri. Karena margin membuat elemen kosong, dan tidak menambahkan ruang untuk si konten*/
+    margin-top: -300px;  /*menambahkan margin-top yang berarti margin-nya di atas, jadi elemen sebelum-nya akan ke bawah*/
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /*Trebuchet MS = merupakan font-family*/
+}
+.hero .Profil h1{
+    color: white;   /*warna teks = putih*/
+    font-weight: 700;   /*teks menjadi tebal dengan ukuran ketebalan 700*/
+    
+    background-color: rgba(0, 0, 0, 0.726);
+
+
+}
+
+.hero .Profil h2{
+    color: rgba(255, 255, 255, 0.673);  /*warna teks putih*/
+    background-color: rgba(141, 141, 141, 0.692);
+
+}
+
+
+.Profil p{
+    letter-spacing: 2px;  /*spasi antar kata = 2px*/
+    margin-left: 500px;     /*menambahkan margin ke kiri, yang berarti elemen akan bergerak ke kanan*/
+    /*     AWAL        */
+    color: black;   /*warna teks = hitam*/
+    background-color: white;    /*warna background = putih */
+    border:  solid black;    /*membuat border dengan tipe solid(full garis = 4 sisi) dengan warna border = hitam*/
+    border-radius: 6px;
+    padding: 10px;  /*padding = 10px, padding untuk membuat isi konten menjadi lebar / bertambah = 4 sisi*/
+    float: left;    /*float kiri*/
+    
+    box-shadow: 0 2px 0 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*font-famly = Franklin Gothic Medium*/
+    margin-top: 20px;
+    
+    
+
+    
+    transition: all 950ms ease 182ms;    /*transisi dengan value = all(semua) 1s(1 detik) ease(timgging function)*/
+
+}
+
+
+
+/*                              ~Start Transisi~                        */
+
+.Profil p:hover{
+    /*Hasil transisi*/
+    background-color: black;    /*warna background = hitam*/
+    border: 2px solid black;
+    box-shadow: 0 0 1px 1px;
+
+
+    color: white;   /*warna teks = putih*/
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*font-famly = Franklin Gothic Medium*/
+}
+
+
+/*                      ~End Transisi                       */
+
+
+
+
+/*                              ~Start About~                      */
+
+
+.container-about{
+
+    
+    background-image: url(Resource/background-about.jpg); /*menambahkan gambar dengan properti CSS*/
+    background-repeat: no-repeat;  /*background repeat(tidak mengulang)*/
+    background-size: cover; /**background-size dengan value cover = full frame/ full ukuran*/
+}
+
+.kotak-1 div h2{  /*kotak about me*/
+    background-color: white;    /*warna background = putih*/
+    color: black;   /*warna teks hitam*/
+
+    width: 180px;   /*width = lebar, dari kotak = 180px*/
+    position: absolute;  /*posisi = absolute*/
+    font-family: Arial; /*font-famly = Arial*/
+}
+
+
+.kotak-1{         /*ini kita sebut ( kondisi awal )*/
+    width:200px;
+    height:300px;
+    background-color:  rgba(29, 30, 30, 0.234);
+
+    transition: all 1s ease;
+    display: flex;
+
+    z-index: 99;
+
+
+}
+
+.container-about:hover .kotak-1{   /*agar terlihat perubahan-nya kita perlu transisi*/
+    width: 400px;
+    height: 500px;
+    margin-left: 200px;
+    background-color:  rgba(29, 30, 30, 0.602);
+
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /*height: auto;*/
+
+    font-weight: 700;
+    font-family: Verdana;
+
+}
+
+
+
